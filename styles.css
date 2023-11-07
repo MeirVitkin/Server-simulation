@@ -1,0 +1,158 @@
+body {
+    position: relative;
+    background-color: rgba(120, 182, 188, 0.812);
+}
+
+#server {
+    width: 150px;
+    height: 100%;
+    background-color: rgba(27, 131, 143, 0.812);
+    color: antiquewhite;
+    position: fixed;
+    font-size: 70px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Dela Gothic One', cursive;
+    top: 0;
+    right: 0;
+    
+}
+
+.h1 {
+    margin: 0;
+    margin-left: 0%;
+    width: 100%;
+    /* background-color: rgba(3, 2, 2, 0.5); */
+    font-family: 'Martian Mono', monospace;
+    color: rgb(27, 131, 143, 0.812);
+    font-size: 30px;
+    text-align: center;
+
+
+
+}
+
+.header .button {
+    font-family: 'Martian Mono', monospace;
+    width: 50px;
+
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 30px;
+    /* background-color: rgba(3, 2, 2, 0.5); */
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cilentConteinor {
+    display: grid;
+    grid-template-columns: 250px 800px;
+    gap: 15px;
+}
+
+
+
+.client,
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+
+.toDropdown,
+input,
+.button {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(27, 131, 143, 0.812);
+}
+
+.button {
+    text-align: center;
+    background-color: antiquewhite;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: rgba(27, 131, 143, 0.812);
+}
+
+/* Active (click) effect */
+.button:active {
+    transform: translateY(2px);
+    /* Move the button down slightly on click */
+}
+
+.mesegeBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(227, 235, 242);
+    width: 250px;
+    height: 250px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.messageFrom {
+    margin: 0;
+    margin-left: auto;
+    text-align: right;
+    padding: 1px;
+    color: black;
+    background-color: azure;
+    border: 0.5px solid rgb(157, 154, 154);
+    border-radius: 10%;
+    font-family: 'Martian Mono', monospace;
+}
+
+.messageTo {
+    margin: 0;
+    margin-right: auto;
+    /* Push the message to the left (flex-start) */
+    text-align: left;
+    padding: 1px;
+    color: black;
+    /* background-color: rgb(156, 242, 119); */
+    border: 0.5px solid rgb(157, 154, 154);
+    border-radius: 10%;
+    font-family: 'Martian Mono', monospace;
+}
+
+.messageTime {
+    font-size: 12px;
+}
+
+.msgTo {
+    margin: 0;
+    align-self: start;
+
+}
+
+.msgFrom {
+    margin: 0;
+    align-self: flex-end;
+}
